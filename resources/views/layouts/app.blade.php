@@ -16,6 +16,9 @@
     <!-- Scripts -->
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     <script src="https://unpkg.com/infinite-scroll@4/dist/infinite-scroll.pkgd.js"></script>
+    <meta property="og:url" content="{{ url()->current() }}">
+    <meta property="og:title" content="A Post in 100characters">
+    <meta property="og:image" content="{{ asset('img/100characters (2).png') }}">
 </head>
 
 <body class="font-sans antialiased dark">
