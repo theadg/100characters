@@ -7,7 +7,7 @@
             <span class="text-3xl sm:text-4xl ">nobody cares, post it!</span>
         </div>
 
-        <div class="px-5 sm:w-1/3">
+        <div class="px-5 sm:w-1/2">
             <h3 class="text-3xl font-semibold">
                 🌈 Anonymity, No Strings Attached:
             </h3>
@@ -18,7 +18,7 @@
             </p>
         </div>
 
-        <div class="px-5 sm:w-1/3">
+        <div class="px-5 sm:w-1/2">
             <h3 class="text-3xl font-semibold">
                 🌟 Rules? Just 100 Characters!
             </h3>
