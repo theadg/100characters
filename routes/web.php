@@ -18,9 +18,13 @@ use Illuminate\Support\Facades\Route;
 
 Route::redirect('/', '/posts');
 
-Route::resource('posts', PostController::class);
+Route::resource('posts', PostController::class)
+    ->except('update', 'delete');
 
 Route::get('about', [HomeController::class, 'about'])
     ->name('about');
+
+Route::get('contact', [HomeController::class, 'contact'])
+    ->name('contact');
 
 require __DIR__.'/auth.php';

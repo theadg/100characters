@@ -2,8 +2,8 @@
 
 @section('content')
     <div class="flex flex-col items-center justify-center min-h-screen gap-5 py-28">
-        <div class="text-center sm:w-1/2">
-            <h1 class="font-semibold text-7xl text-wrap">
+        <div class="px-32 text-center sm:w-1/2">
+            <h1 class="text-5xl font-semibold sm:text-6xl text-wrap">
                 Share this note to someone! 🫣✉️
             </h1>
             <ul class="flex justify-center mt-5 space-x-5">

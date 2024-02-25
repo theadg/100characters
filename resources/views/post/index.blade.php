@@ -1,9 +1,9 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="flex flex-col items-center justify-center min-h-screen gap-5 py-28">
+    <div class="flex flex-col items-center justify-center min-h-screen gap-5 px-5 py-28">
         <div class="text-center sm:w-1/2">
-            <h1 class="font-semibold text-7xl text-wrap">
+            <h1 class="text-5xl font-semibold sm:text-6xl text-wrap">
                 Sometimes, all you need is 100 characters (or less) to
             </h1>
 
