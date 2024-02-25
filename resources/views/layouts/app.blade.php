@@ -8,7 +8,7 @@
     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
     <meta property="og:url" content="{{ url()->current() }}">
     <meta property="og:title" content="A Post in 100characters">
-    <meta property="og:image" content="{{ asset('img/100characters (2).png') }}">
+    <meta property="og:image" content="{{ asset('/img/100characters (2).png') }}">
     <meta property="og:type" content="website" />
 
     <title>{{ config('app.name', 'Laravel') }}</title>
