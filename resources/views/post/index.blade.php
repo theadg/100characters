@@ -14,17 +14,15 @@
 
         <div class="flex flex-wrap items-center justify-center w-8/12 gap-5 py-16 posts-container ">
             @forelse ($posts as $post)
-                @include('post.partials.list')
+                <a class="duration-100 ease-in hover:scale-125" href="{{ route('posts.show', $post->id) }}">
+                    @include('post.partials.list')
+                </a>
             @empty
                 <div class="flex flex-col items-center gap-5">
                     <p class="text-9xl">Wala pa nagpopost 😔</p>
                 </div>
             @endforelse
         </div>
-        <div id="loading-bar" style="display: none;">
-            <!-- Your loading bar or animation HTML goes here -->
-        </div>
-
         {{ $posts->links() }}
     </div>
 @endsection
