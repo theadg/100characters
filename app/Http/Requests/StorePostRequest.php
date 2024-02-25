@@ -22,9 +22,13 @@ class StorePostRequest extends FormRequest
     public function rules(): array
     {
         return [
+            'author' => [
+                'nullable',
+                'max:15'
+            ],
             'content' => [
                 'required',
-                'min: 5',
+                'min: 1',
                 'max: 255'
             ]
         ];
