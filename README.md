@@ -16,7 +16,7 @@ Embrace the challenge of capturing your essence in a tiny space.
 
 ## Features
 
-Behind 100 characters is a simple web-app that uses ![Laravel](https://img.shields.io/badge/laravel-%23FF2D20.svg?style=for-the-badge&logo=laravel&logoColor=white),![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white) and AlpineJS to allow users to create/share posts.
+Behind 100 characters is a simple web-app that uses ![Laravel](https://img.shields.io/badge/laravel-%23FF2D20.svg?style=for-the-badge&logo=laravel&logoColor=white),![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white) and AlpineJS to allow users to create and share posts on other social media platforms.
 
 
 
