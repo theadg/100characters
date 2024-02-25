@@ -90,7 +90,7 @@
                 <a class="text-2xl dark:hover:text-sky-300 hover:text-sky-800" href="{{ route('about') }}">about</a>
             </div>
             <div class="items-center sm:flex sm:items-center dark:text-white">
-                <a class="text-2xl dark:hover:text-sky-300 hover:text-sky-800" href="{{ route('about') }}">contact</a>
+                <a class="text-2xl dark:hover:text-sky-300 hover:text-sky-800" href="{{ route('contact') }}">contact</a>
             </div>
             <a href="https://github.com/theadg/freedom-wall-public" target="_blank"
                 class="text-gray-500 dark:hover:text-sky-300 hover:text-sky-800 dark:text-gray-400">
