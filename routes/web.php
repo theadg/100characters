@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\HomeController;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
@@ -18,5 +19,8 @@ use Illuminate\Support\Facades\Route;
 Route::redirect('/', '/posts');
 
 Route::resource('posts', PostController::class);
+
+Route::get('about', [HomeController::class, 'about'])
+    ->name('about');
 
 require __DIR__.'/auth.php';
