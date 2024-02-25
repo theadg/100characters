@@ -2,23 +2,23 @@
 
 namespace App\Models;
 
-use Carbon\Carbon;
+use Illuminate\Database\Eloquent\Concerns\HasUuids;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
 class Post extends Model
 {
-    use HasFactory;
+    use HasFactory, HasUuids;
 
     protected $fillable = [
+        'author',
         'content',
     ];
 
     public function getDateCreatedAttribute()
     {
-        return Carbon::parse($this->created_at)
+        return $this->created_at
             ->timezone('Asia/Manila')
-            ->format('M d, Y h:i A');
+            ->diffForHumans();
     }
-
 }
