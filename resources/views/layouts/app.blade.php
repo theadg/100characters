@@ -18,6 +18,7 @@
 </head>
 
 <body class="font-sans antialiased dark">
+    {{-- min-h-screen --}}
     <div class="min-h-screen bg-gray-100 dark:bg-gray-800">
         @include('layouts.navigation')
 
@@ -31,7 +32,8 @@
         @endif
 
         <!-- Page Content -->
-        <main class="min-h-screen dark:text-white">
+        {{-- min-h-screen --}}
+        <main class=" dark:text-white">
             @yield('content')
         </main>
         @include('layouts.footer')

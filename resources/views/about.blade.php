@@ -1,11 +1,10 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="flex flex-col items-center min-h-screen gap-16 pt-28">
-        <div class="mb-10 text-wrap">
+    <div class="flex flex-col items-center min-h-[87vh] gap-16 pt-28 mb-5">
+        <div class="mb-5 text-wrap">
             <h2 class="text-5xl font-bold sm:text-6xl">100characters</h2>
             <span class="text-3xl sm:text-4xl ">nobody cares, post it!</span>
-
         </div>
 
         <div class="px-5 sm:w-1/3">

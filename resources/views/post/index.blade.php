@@ -12,11 +12,9 @@
         <x-create-post-button />
         <p class="text-3xl">{{ $postsCount }} thoughts written</p>
 
-        <div class="flex flex-wrap items-center justify-center w-8/12 gap-5 py-16 posts-container ">
+        <div class="flex flex-wrap items-center justify-center w-full gap-5 py-16 sm:w-8/12 posts-container ">
             @forelse ($posts as $post)
-                <a class="duration-100 ease-in hover:scale-125" href="{{ route('posts.show', $post->id) }}">
-                    @include('post.partials.list')
-                </a>
+                @include('post.partials.list')
             @empty
                 <div class="flex flex-col items-center gap-5">
                     <p class="text-9xl">Wala pa nagpopost 😔</p>

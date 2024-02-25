@@ -1,10 +1,11 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="flex flex-col items-center justify-center min-h-screen gap-5 py-28">
+{{-- min-h-screen --}}
+    <div class="flex flex-col items-center justify-center min-h-[87vh] gap-5">
         <div class="px-32 text-center sm:w-1/2">
             <h1 class="text-5xl font-semibold sm:text-6xl text-wrap">
-                Share this note to someone! 🫣✉️
+                Share this note to someone! 🫣💯
             </h1>
             <ul class="flex justify-center mt-5 space-x-5">
                 <li>

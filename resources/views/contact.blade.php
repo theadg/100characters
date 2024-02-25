@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="flex flex-col items-center min-h-screen gap-20 py-28">
+    <div class="flex flex-col items-center min-h-[87vh] gap-20 pt-28">
         <div class="mb-5 text-wrap">
             <h2 class="text-5xl font-bold sm:text-6xl">Get In Touch</h2>
             <span class="text-3xl sm:text-4xl ">we'd love to hear from you!</span>
