@@ -10,14 +10,14 @@
         </div>
         <p class="text-6xl">👇</p>
         <x-create-post-button />
-        <p class="text-3xl">{{ $postsCount }} thoughts written</p>
+        <p class="text-2xl">{{ $postsCount }} thoughts written</p>
 
         <div class="flex flex-wrap items-center justify-center w-full gap-5 py-16 sm:w-8/12 posts-container ">
             @forelse ($posts as $post)
                 @include('post.partials.list')
             @empty
                 <div class="flex flex-col items-center gap-5">
-                    <p class="text-9xl">Wala pa nagpopost 😔</p>
+                    <p class="text-5xl text-center break-words text-wrap">Wala pa nagpopost 😔</p>
                 </div>
             @endforelse
         </div>
