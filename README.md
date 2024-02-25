@@ -1,7 +1,7 @@
 
-# 100characters
+# 100characters | Online freedom wall
 
-An online freedom wall
+Sometimes, all you need is 100 characters (or less) to express yourself.
 
 🌈 Anonymity, No Strings Attached:
 No profiles, no followers – just your thoughts . Feel free to be your authentic self without the weight of online personas. Anonymity is the name of the game, allowing you to express without inhibition.
