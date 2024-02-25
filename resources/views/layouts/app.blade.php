@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <meta property="og:url" content="{{ url()->current() }}">
+    <meta property="og:title" content="A Post in 100characters">
+    <meta property="og:image" content="{{ asset('img/100characters (2).png') }}">
+    <meta property="og:type" content="website" />
 
     <title>{{ config('app.name', 'Laravel') }}</title>
 
@@ -16,9 +20,7 @@
     <!-- Scripts -->
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     <script src="https://unpkg.com/infinite-scroll@4/dist/infinite-scroll.pkgd.js"></script>
-    <meta property="og:url" content="{{ url()->current() }}">
-    <meta property="og:title" content="A Post in 100characters">
-    <meta property="og:image" content="{{ asset('img/100characters (2).png') }}">
+
 </head>
 
 <body class="font-sans antialiased dark">
