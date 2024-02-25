@@ -10,7 +10,7 @@
         <form class="flex *:mb-10 flex-col px-10 sm:w-1/2 gap-5" action="{{ route('posts.store') }}" method="POST">
             @csrf
             <div>
-                <label class="block mb-2 text-4xl font-medium text-gray-900 dark:text-white" for="message">
+                <label class="block mb-2 text-2xl font-medium text-gray-900 sm:text3-xl dark:text-white" for="message">
                     🫵 Your Name (you can leave this blank)
                 </label>
                 <input id="message" name="author" @class([
@@ -23,7 +23,8 @@
                     'bg-gray-50',
                     'p-2.5',
                     'px-5',
-                    'text-4xl',
+                    'text-xl',
+                    'md:text-3xl',
                     'text-gray-900',
                     'focus:border-blue-500',
                     'focus:ring-blue-500',
@@ -45,7 +46,7 @@
                 @enderror
             </div>
             <div>
-                <label class="block mb-2 text-4xl font-medium text-gray-900 dark:text-white" for="message">
+                <label class="block mb-2 text-2xl font-medium text-gray-900 md:text-3xl dark:text-white" for="message">
                     💭 Your Message to the World
                 </label>
                 <textarea id="message" name="content" @class([
@@ -58,7 +59,8 @@
                     'bg-gray-50',
                     'p-2.5',
                     'px-5',
-                    'text-4xl',
+                    'text-xl',
+                    'md:text-3xl',
                     'text-gray-900',
                     'focus:border-blue-500',
                     'focus:ring-blue-500',
@@ -85,7 +87,7 @@
             </div>
 
             <button
-                class="mb-2 me-2 rounded-lg bg-sky-600 p-5 py-2.5 text-4xl font-medium text-white duration-150 ease-linear hover:bg-sky-800 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:bg-sky-600 dark:hover:bg-sky-700 dark:focus:ring-blue-800"
+                class="mb-2 me-2 rounded-lg bg-sky-600 p-5 py-2.5 text-2xl md:text-3xl font-medium text-white duration-150 ease-linear hover:bg-sky-800 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:bg-sky-600 dark:hover:bg-sky-700 dark:focus:ring-blue-800"
                 type="submit">Post and Get Your Dopamine Spike 🚀</button>
         </form>
     </div>
