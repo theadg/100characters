@@ -12,7 +12,7 @@
                 🌈 Anonymity, No Strings Attached:
             </h3>
             <p class="text-2xl justify-normal">
-                No profiles, no followers – just your note . Feel free to be your authentic
+                No profiles, no followers – just your thoughts . Feel free to be your authentic
                 self without the weight of online personas. Anonymity is the name of the game, allowing you to express
                 without inhibition.
             </p>
