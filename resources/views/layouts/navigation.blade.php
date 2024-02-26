@@ -107,6 +107,13 @@
 
 <script>
     const toggleMode = () => {
-        document.body.classList.toggle("dark");
+        document.documentElement.classList.toggle("dark");
+
+        if (localStorage.getItem('color-theme') === 'light'){
+            localStorage.setItem('color-theme', 'dark')
+        } else {
+            // document.documentElement.classList.toggle("dark");
+            localStorage.setItem('color-theme', 'light')
+        }
     }
 </script>
