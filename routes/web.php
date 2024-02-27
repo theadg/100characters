@@ -21,6 +21,9 @@ Route::redirect('/', '/posts');
 Route::resource('posts', PostController::class)
     ->except('update', 'delete');
 
+Route::post('posts/save', [PostController::class, 'save'])
+    ->name('posts.save');
+
 Route::get('about', [HomeController::class, 'about'])
     ->name('about');
 

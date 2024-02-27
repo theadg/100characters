@@ -24,7 +24,7 @@
 
 </head>
 
-<body class="font-sans antialiased dark">
+<body class="font-sans antialiased">
     {{-- min-h-screen --}}
     <div class="min-h-screen bg-gray-100 dark:bg-gray-800">
         @include('layouts.navigation')
@@ -45,6 +45,15 @@
         </main>
         @include('layouts.footer')
     </div>
+
+    <script>
+        // On page load or when changing themes, best to add inline in `head` to avoid FOUC
+        if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.classList.add('dark');
+        } else {
+            document.documentElement.classList.remove('dark')
+        }
+    </script>
     @stack('scripts')
 </body>
 </html>
