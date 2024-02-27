@@ -54,18 +54,18 @@ class PostController extends Controller
     {
         try {
             $screenshotPath = storage_path('images/');
-
+            $path = "{$screenshotPath}/screenshot.jpg";
             // Create Directory if Path does not exist
             if (!File::exists($screenshotPath)) {
                 File::makeDirectory($screenshotPath, 0755, true);
             }
 
-            $browsershot = new Browsershot("$request->url?save", true);
+            $browsershot = new Browsershot("{$request->url}?save", true);
             $browsershot
                 ->device('iPhone 12 Pro')
-                ->save("$screenshotPath/screenshot.jpg");
+                ->save($path);
 
-            return response()->download($screenshotPath . '/screenshot.jpg');
+            return response()->download($path);
         } catch (Exception $e) {
             logger($e);
             dd($e->getMessage());
