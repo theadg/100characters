@@ -19,5 +19,7 @@
     'libxss1',
     'libxtst6',
     'xdg-utils',
-    'php82Extensions.imagick',
+    'imagemagick',
+    'imagemagick-doc',
+    'php-imagick',
     ]
