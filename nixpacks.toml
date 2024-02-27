@@ -23,3 +23,5 @@
     'imagemagick-doc',
     'php-imagick',
     ]
+[phases.build]
+  cmds = ["echo building!","sudo phpenmod imagick", "php -m | grep imagick", "sudo systemctl reload nginx"]
