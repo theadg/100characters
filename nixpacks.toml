@@ -19,5 +19,5 @@
     'libxss1',
     'libxtst6',
     'xdg-utils',
-    'php82Extensions.imagick
+    'php82Extensions.imagick',
     ]
