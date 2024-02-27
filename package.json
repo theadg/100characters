@@ -16,7 +16,6 @@
         "vite": "^5.0.0"
     },
     "dependencies": {
-        "chromium": "^3.0.3",
         "puppeteer": "^14.4.1"
     }
 }
