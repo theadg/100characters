@@ -25,5 +25,3 @@
 ]
 [phases.build]
     cmds = ["echo building!","sudo phpenmod imagick", "php -m | grep imagick", "sudo systemctl reload nginx"]
-[start]
-    cmd = "sudo phpenmod imagick && node /assets/scripts/prestart.mjs /assets/nginx.template.conf/nginx.conf && (php-fpm -y /assets/php-fpm.conf & nginx -c /nginx.conf)"
