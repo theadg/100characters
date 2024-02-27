@@ -19,11 +19,7 @@
         'libxss1',
         'libxtst6',
         'xdg-utils',
-        'imagemagick',
-        'imagemagick-doc',
-        'php-imagick',
     ]
     nixPkgs = [
-        'imagemagick',
         'php82Extensions.imagick'
     ]
