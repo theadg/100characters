@@ -5,6 +5,11 @@ namespace App\Http\Controllers;
 use App\Http\Requests\StorePostRequest;
 use App\Http\Requests\UpdatePostRequest;
 use App\Models\Post;
+use Exception;
+use HeadlessChromium\BrowserFactory;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\File;
+use Spatie\Browsershot\Browsershot;
 
 class PostController extends Controller
 {
@@ -42,6 +47,29 @@ class PostController extends Controller
     public function show(Post $post)
     {
         return view('post.show', compact('post'));
+    }
+
+    // Using Browsershot
+    public function save(Request $request)
+    {
+        try {
+            $screenshotPath = storage_path('images/');
+
+            // Create Directory if Path does not exist
+            if (!File::exists($screenshotPath)) {
+                File::makeDirectory($screenshotPath, 0755, true);
+            }
+
+            $browsershot = new Browsershot("$request->url?save", true);
+            $browsershot
+                ->device('iPhone 12 Pro')
+                ->save("$screenshotPath/screenshot.jpg");
+
+            return response()->download($screenshotPath . '/screenshot.jpg');
+        } catch (Exception $e) {
+            logger($e);
+            dd($e->getMessage());
+        }
     }
 
     /**
