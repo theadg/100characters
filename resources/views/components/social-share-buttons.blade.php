@@ -45,7 +45,7 @@
         </a>
     </li>
     <li>
-        {{-- <form action="{{ route('posts.save') }}" method="POST" enctype="multipart/form-data">
+        <form action="{{ route('posts.save') }}" method="POST" enctype="multipart/form-data">
             @csrf
             <input type="hidden" name="url" value="{{ url()->current() }}">
             <button role="button" type="submit"
@@ -57,7 +57,7 @@
                 </svg>
 
             </button>
-        </form> --}}
+        </form>
     </li>
 </ul>
 
