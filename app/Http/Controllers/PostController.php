@@ -62,6 +62,9 @@ class PostController extends Controller
 
             $browsershot = new Browsershot("{$request->url}?save", true);
             $browsershot
+                ->addChromiumArguments([
+                    'no-sandbox',
+                ])
                 ->device('iPhone 12 Pro')
                 ->save($path);
 
